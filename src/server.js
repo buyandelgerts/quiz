@@ -59,8 +59,7 @@ app.post("/auth/login", (req, res) => {
 
 app.get("/protected", requireAuth, (req, res) => {
   res.json({
-    message: "You accessed protected data",
-    user: req.user,
+    message: "Hooray! nerdy guy. You did it!",
   });
 });
 
